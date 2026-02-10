@@ -5,7 +5,7 @@ to generate Text Pattern Generated text files, so that you can practice your edi
 using a text editor or word processor.<br>
 
 All of the template files can be modified to suit your needs and preferences, and running them<br>
-will create your Text Pattern Generated text files to a timestamped file.<br>
+will create your Text Pattern Generated text files to a named or timestamped file.<br>
 
 The QuickScript design to the templates means you can create and design your Text Pattern Generated<br>
 files very quickly.<br>
