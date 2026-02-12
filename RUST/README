@@ -1,0 +1,47 @@
+##########################
+Getting started with Rust.
+##########################
+
+Although you can compile basic Rust programs using rustc, there will be times when
+you will be getting involved with Cargo and Crates. If your program contains Crate
+imports, you will need to set up a project.
+
+Let's now have an example using the Text Pattern QuickScript file "tpl-0001.rs".
+
+1: Create a new project called tpl-0001:
+
+$ cargo new tpl-0001
+
+2: Move "tpl-0001.rs" into the project, renaming it as "main.rs":
+
+$ mv tpl-0001.rs tpl-0001/main.rs
+
+3: Go into the tpl-0001 directory:
+
+$ cd tpl-0001
+
+4: Build and Run the program:
+
+$ cargo build
+$ cargo run
+
+With luck, you should have your newly created Text Pattern QuickScipt generated text file,
+starting with "00_".
+
+---------------------------------------------------------
+
+A further example of using Cargo and Crates will be necessary if random number generation
+is to be used. Here we will install the crate "rand" into the project:
+
+$ cargo install rand
+
+---------------------------------------------------------
+
+Website links:
+
+https://rust-lang.org/learn/
+https://doc.rust-lang.org/stable/
+https://doc.rust-lang.org/stable/std/index.html
+https://doc.rust-lang.org/cargo/index.html
+https://crates.io/
+
