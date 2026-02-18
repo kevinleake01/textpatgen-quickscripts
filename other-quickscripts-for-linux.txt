@@ -1,0 +1,37 @@
+----- OTHER QUICKSCRIPTS FOR LINUX -----
+
+For users using Linux, there are several built-in commands that generate
+Text Pattern like files very quickly. Here are some examples, with the
+Text Pattern Generated file saved to a filename starting with "00_" :
+
+--- UUIDGEN ---
+
+$ uuidgen -t -C 25 > 00_20260327_114720.txt   # 25x UUID v1 line of text
+
+$ uuidgen -r -C 25 > 00_20260327_114839.txt   # 25x UUID v4 line of text
+
+$ uuidgen -6 -C 25 > 00_20260327_115007.txt   # 25x UUID v6 line of text
+
+$ uuidgen -7 -C 25 > 00_20260327_115113.txt   # 25x UUID v7 line of text
+
+--- OD ---
+
+$ od -t x2 -w32 file.bin > 00_20260327_115630.txt  # Random numbers in Hex, read from file.bin
+
+$ od -t d2 -w20 file.bin > 00_20260327_115832.txt  # Random numbers in Decimal, read from file.bin
+
+--- HEXDUMP ---
+
+$ hexdump -e '15 2 "X-%04X " 1 2 " X-%04X\n"' file.bin > 00_20260327_120320.txt   # Random numbers in Hex, read from file.bin
+
+$ hexdump -e '9 2 "D-%05u " 1 2 " D-%05u\n"' file.bin > 00_20260327_120458.txt   # Random numbers in Decimal, read from file.bin
+
+--- BASENC ---
+
+$ basenc --base16 -w64 file.bin > 00_20260327_121604.txt   # Random numbers in Hex, read from file.bin
+
+$ basenc --base32 -w64 file.bin > 00_20260327_121755.txt   # Random numbers in Base32, read from file.bin
+
+$ basenc --base64 -w64 file.bin > 00_20260327_121936.txt   # Random numbers in Base64, read from file.bin
+
+
