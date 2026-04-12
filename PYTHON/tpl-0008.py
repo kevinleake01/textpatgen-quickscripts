@@ -14,11 +14,11 @@ fp.write(time.strftime('TEXTPATGEN-QUICKSCRIPT-PYTHON: %Y-%m-%dT%H:%M:%S%z\n'))
 num=0
 for length in range(0, 10):
   for width in range(0, 9):
-    fp.write('D-%05d ' % num)
+    fp.write('D-%02d ' % num)
     num=num+1
     width=width+1
     length=length+1
-  fp.write('D-%05d\n' % num)
+  fp.write('D-%02d\n' % num)
   num=num+1
 fp.close()
 
