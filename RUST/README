@@ -25,15 +25,16 @@ $ cd tpl-0001
 $ cargo build
 $ cargo run
 
-With luck, you should have your newly created Text Pattern QuickScipt generated text file,
+With luck, you should have your newly created Text Pattern QuickScript generated text file,
 starting with "00_".
 
 ---------------------------------------------------------
 
 A further example of using Cargo and Crates will be necessary if random number generation
-is to be used. Here we will install the crate "rand" into the project:
+is to be used. Here we will install the crates "rand" and "urng" into the project:
 
 $ cargo install rand
+$ cargo install urng
 
 ---------------------------------------------------------
 

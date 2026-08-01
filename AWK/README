@@ -1,0 +1,10 @@
+AWK is a text processing language, and this makes it perfect for generating
+Text Pattern QuickScripts from AWK Templates in less than 25 lines of code.
+
+Here are some examples of creating Text Pattern QuickScripts using AWK:
+
+$ awk -f tpl-0001.awk > 00_20260514_163527.txt
+
+$ awk -f tpl-0002.awk > 00_20260514_163804.txt
+
+
